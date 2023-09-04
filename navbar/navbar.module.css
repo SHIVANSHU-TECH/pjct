@@ -1,0 +1,56 @@
+.container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+.menu{
+  display: none;
+  position: sticky;
+}
+
+.logout {
+  padding: 5px;
+  border: none;
+  background-color: #53c28b;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 580px) {
+  .links{
+    background-color: transparent;
+    margin-top: 450px;
+    display: grid;
+    margin-right: 30%;
+    z-index: 100;
+    width: 100%;
+    left:50%;
+    top:-80%; 
+    
+  }
+  .open{
+    display: flex;
+  }
+
+  .menu{
+    display: flex;
+    width: 45px;
+    height: 50px;
+    margin-left: -15%;
+
+  }
+}
